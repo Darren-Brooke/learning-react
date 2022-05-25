@@ -21,7 +21,7 @@ function App() {
 
   const addItem = (item) => {
     //uses Ternary statement, it's a simple conditional operator. The ? is if, and : is else
-    //compares the item id against the length - 1 to get the last item in the list as arrays start at 1 then increments it by 1, if id has no length it's 0 and we can just set the id to 1 
+    //compares the item id against the length - 1 to get the last item in the list as arrays start at 0 then increments it by 1, if id has no length it's 0 and we can just set the id to 1 
     const id = items.length ? items[items.length - 1].id + 1 : 1;
     const myNewItem = { id, checked: false, item };
     // uses spread operator
